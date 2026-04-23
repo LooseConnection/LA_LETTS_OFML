@@ -35,7 +35,7 @@ RMS Configurations:
 
 KNOWN ISSUES (v1.0)
 --------------------
-[ ] ENTTIY_Boat typo in ENTITIES bundle QUERYINPUTFORM name field
+[x] ENTTIY_Boat typo in ENTITIES bundle QUERYINPUTFORM name field -- fixed 2026-04-22
 
 OPEN ITEMS (Phase 1)
 --------------------

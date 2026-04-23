@@ -3892,7 +3892,7 @@
               }
             }
           },
-          "name": "ENTTIY_Boat",
+          "name": "ENTITY_Boat",
           "type": "QUERYINPUTFORM",
           "targetEntity": "Boat"
         }

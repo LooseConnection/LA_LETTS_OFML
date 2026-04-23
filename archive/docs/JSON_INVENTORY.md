@@ -22,5 +22,5 @@ LA_LETTS_OFML.json (source)
   +-- LA_LETTS_OFML_BASE.json v1.0 <-- CURRENT
         - 5 entities: Vehicle, Person, Firearm, Article, Boat
         - 6 CommSys QIDMs + 2 RMS QIDMs + QRDM
-        - Note: ENTTIY_Boat typo in ENTITIES bundle (QUERYINPUTFORM name)
+        - Note: ENTTIY_Boat typo fixed 2026-04-22
 ```
