@@ -1,6 +1,6 @@
 LA_LETTS_OFML -- Build Status
 ==============================
-Last updated: 2026-04-22
+Last updated: 2026-04-23
 Current version: 1.0 (Phase 1 -- initial standup)
 Provider: LA_LEMS (internal name) / LA_LETTS_OFML (repo name)
 Phase: 01_standup (initial JSON, not yet tested)
@@ -32,6 +32,13 @@ RMS Configurations:
   RMS Vehicle search query             QUERYINPUTDATAMAPPING
   RMS_Results                          QUERYRESULTDATAMAPPING
   RMS_ResultsLayout                    QUERYRESULTSLAYOUT
+
+ATTENTION FIELD PATTERN
+-----------------------
+  CommsysGetLastNameFirstNameInitialRuleHandler on Attention QIDM attribute (all QIDMs).
+  No Attention FormInput on any form -- handler reads officer session (LName FInitial).
+  Attention in any[] on all combinations. Confirmed correct pattern (matches CA_eSUN).
+  This pattern was cross-validated against CommSys XML logs vs HI/FL comparison 2026-04-22.
 
 KNOWN ISSUES (v1.0)
 --------------------
