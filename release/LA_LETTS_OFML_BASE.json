@@ -1109,7 +1109,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "GunQuery",
-          "queryLabel": "LA_LEMS",
+          "queryLabel": "Firearm",
           "targetEntity": "Firearm"
         },
         {
@@ -1227,7 +1227,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "VehicleRegistrationQuery",
-          "queryLabel": "LA_LEMS",
+          "queryLabel": "Vehicle Registration",
           "targetEntity": "Vehicle"
         },
         {
@@ -1366,7 +1366,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "DriverLicenseQuery",
-          "queryLabel": "LA_LEMS DL",
+          "queryLabel": "Driver License",
           "targetEntity": "Person"
         },
         {
@@ -1495,7 +1495,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "DriverHistoryQuery",
-          "queryLabel": "LA_LEMS Driver History",
+          "queryLabel": "Driver History",
           "targetEntity": "Person"
         },
         {
@@ -1577,7 +1577,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "BoatQuery",
-          "queryLabel": "LA_LEMS",
+          "queryLabel": "Boat",
           "targetEntity": "Boat"
         },
         {
@@ -1635,7 +1635,7 @@
           "provider": "LA_LEMS",
           "providerType": "Commsys",
           "query": "ArticleSingleQuery",
-          "queryLabel": "LA_LEMS",
+          "queryLabel": "Article",
           "targetEntity": "Article"
         }
       ],
