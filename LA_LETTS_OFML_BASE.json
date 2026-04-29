@@ -4198,7 +4198,6 @@
                   "VehicleModelCode",
                   "LicensePlateNumber",
                   "RegistrationState",
-                  "LicensePlateYear",
                   "OwnerFirstName",
                   "OwnerLastName"
                 ],
@@ -4217,7 +4216,6 @@
                   "VehicleYear",
                   "VehicleMakeCode",
                   "VehicleModelCode",
-                  "LicensePlateYear",
                   "OwnerFirstName",
                   "OwnerLastName"
                 ],
@@ -4236,7 +4234,6 @@
                   "VehicleYear",
                   "VehicleMakeCode",
                   "VehicleModelCode",
-                  "LicensePlateYear",
                   "LicensePlateNumber",
                   "RegistrationState",
                   "VehicleIdentificationNumber"
