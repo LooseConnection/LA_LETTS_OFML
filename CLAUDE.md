@@ -33,20 +33,29 @@ When a trigger fires, ALL chained actions are part of the same unit of work.
 
 **You discover a new limitation/anti-pattern/import error →** Add to KB → Fire KB trigger
 
-## 3. MANDATORY GATES — Blocking Requirements
+## 3. GAP ANALYSIS — Every Step, Not Just the End
+
+Run an explicit gap check after EVERY action. Never wait until the user asks.
+
+- **After presenting a test batch:** Count QIDM combos vs test list. Numbers must match.
+- **After each test:** Update SQVR ([PENDING]→[CONFIRMED]) + STATUS.txt immediately (part of GATE 3).
+- **After a test phase:** Cross-check combo count vs test file count vs [CONFIRMED] count. Report result.
+- **Before "done":** Full check — negatives for all entities, all any[] fields, all co-fires, all OOS paths.
+
+## 4. MANDATORY GATES — Blocking Requirements
 
 **GATE 1 (post-build):** `build_report.ps1` + 0 FAIL + commit reports + push. BLOCKED until done.
 **GATE 2 (pre-test):** `new_test_log.ps1` creates stub in `tests/`. BLOCKED until stub exists on disk.
-**GATE 3 (post-test):** Fill log + commit + push. BLOCKED from next test until done.
+**GATE 3 (post-test):** Fill log + commit + push + SQVR [PENDING]→[CONFIRMED] + STATUS.txt row. BLOCKED from next test until done.
 **GATE 4 (post-session):** Update STATUS.txt + commit + push.
 **GATE 5 (pre-DONE):** Verify: `ls tests/` (count matches), `docs/base/` (5 reports), STATUS.txt current, SQVR.txt current, `git status` clean. BLOCKED until all pass.
 **GATE 6 (post-KB-update):** Push KB + check cross-repo impact + update affected repos.
 
-## 4. END-OF-RESPONSE VERIFICATION
+## 5. END-OF-RESPONSE VERIFICATION
 
 Before ending ANY response with file changes: (1) all committed+pushed? (2) reports generated? (3) logs saved? (4) STATUS current? (5) SQVR current? (6) KB pushed if updated? (7) anything deferred? Fix now or state why.
 
-## 5. TOOLS
+## 6. TOOLS
 
 ```powershell
 # Build report (5 reports) — GATE 1
@@ -57,13 +66,13 @@ powershell -ExecutionPolicy Bypass -File C:\Users\RobSgambellone\.local\bin\new_
 powershell -ExecutionPolicy Bypass -File C:\Users\RobSgambellone\.local\bin\connectcic-validator\validate.ps1 -Path <json>
 ```
 
-## 6. KB REFERENCE — Read Before Every Session
+## 7. KB REFERENCE — Read Before Every Session
 
 - `C:\Users\RobSgambellone\.local\bin\ConnectCIC-KB\CLAUDE.md` — Master build rules
 - `C:\Users\RobSgambellone\.local\bin\ConnectCIC-KB\knowledge-base\README.txt` — KB index (13 docs)
 - `C:\Users\RobSgambellone\.local\bin\ConnectCIC-KB\knowledge-base\BUILD_CHECKLIST.txt` — Full checklists
 
-## 7. CANONICAL REPO STRUCTURE
+## 8. CANONICAL REPO STRUCTURE
 
 ```
 <PROVIDER>/
